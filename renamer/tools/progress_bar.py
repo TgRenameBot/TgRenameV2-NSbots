@@ -26,7 +26,6 @@ async def progress_bar(current, total, status_msg, start, msg):
         
 **{progressbar} {round(percentage, 2)}%**
 
-
 🐌 **Speed** : {humanbytes(speed)}/s
 ⏳ **Finished** : {humanbytes(current)}
 📁 **File Size** : {humanbytes(total)}
