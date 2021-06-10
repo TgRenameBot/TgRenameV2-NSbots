@@ -14,13 +14,13 @@ from pyrogram.emoji import *
 async def progress_bar(current, total, status_msg, start, msg):
     present = time.time()
     if round((present - start) % 3) == 0 or current == total:
-        speed = current / (present - start)
+        speed = (current / (present - start))*4
         percentage = current * 100 / total
         time_to_complete = round(((total - current) / speed)) * 1000
         time_to_complete = TimeFormatter(time_to_complete)
         progressbar = "[{0}{1}]".format(\
-            ''.join([f"{BLACK_MEDIUM_SMALL_SQUARE}" for i in range(math.floor(percentage / 10))]),
-            ''.join([f"{WHITE_MEDIUM_SMALL_SQUARE}" for i in range(10 - math.floor(percentage / 10))])
+            ''.join([f"▰" for i in range(math.floor(percentage / 10))]),
+            ''.join([f"▱" for i in range(10 - math.floor(percentage / 10))])
             )
         current_message = f"""**{status_msg}** 
 **Percentage : {round(percentage, 2)}%**
