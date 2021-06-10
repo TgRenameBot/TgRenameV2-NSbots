@@ -24,7 +24,6 @@ class TEXT:
 
 ** Developer:** 
 
-
 ** Channel:** [MyTestBotZ](https://t.me/MyTestBotZ)
 
 ** Server:** [Heroku](https://www.heroku.com)
@@ -34,10 +33,10 @@ class TEXT:
 
     HELP_USER = """**Follow Below Steps:**
    
-☞︎︎︎ Use /mode command to change upload mode.
-☞︎︎︎ Send a photo to set as permanent thumbnail. (Optional)
-☞︎︎︎ Now send me the Telegram file you want to rename.
-☞︎︎︎ Send the new name when bot ask.
+➠ Use /toggle command to change upload mode.
+➠ Send a photo to set as permanent thumbnail. (Optional)
+➠ Now send me the Telegram file you want to rename.
+➠ Send the new name with extension when bot ask.
 
 
 """
