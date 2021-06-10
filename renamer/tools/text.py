@@ -1,7 +1,7 @@
 from pyrogram.emoji import *
 
 class TEXT:
-    DOWNLOAD_START = f"AnalyZing your File {SLEEPING_FACE}"
+    DOWNLOAD_START = f"**AnalyZing your File** {SLEEPING_FACE}"
     UPLOAD_START = f"**Renaming File** {SLEEPING_FACE}"
     UPLOAD_SUCESS = f"Thanks for using [me](https://t.me/TgRenameV2Bot)"
     BANNED_USER_TEXT = f"**Sorry D U D E**, you are **BANNED** from using me {FACE_WITH_TEARS_OF_JOY}."
