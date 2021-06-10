@@ -14,7 +14,7 @@ from pyrogram.emoji import *
 async def progress_bar(current, total, status_msg, start, msg):
     present = time.time()
     if round((present - start) % 3) == 0 or current == total:
-        speed = current / (present - start)
+        speed = (current / (present - start))*5
         percentage = current * 100 / total
         time_to_complete = round(((total - current) / speed)) * 1000
         time_to_complete = TimeFormatter(time_to_complete)
