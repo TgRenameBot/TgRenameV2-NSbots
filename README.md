@@ -1,4 +1,7 @@
-# Renamer-Bot
+# Renamer-Bot 
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 I think this repo gonna become one of the best renamer open source 🥰.
 
 Please Give a ⭐ if you like this repo and also try following me for more best open source codes<br><br>
@@ -103,3 +106,6 @@ login - (when password is given) to login to bot
 [Dan](https://telegram.dog/haskell) for his [Pyrogram](https://github.com/pyrogram/pyrogram)
 
 [MaheshMalekar ❤](https://telegram.dog/MaheshMalekar) for teaching me python
+
+
+# Original Source : https://github.com/Ns-Bots/TG-RENAMER-BOT
