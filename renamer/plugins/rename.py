@@ -35,7 +35,7 @@ async def media(c, m):
         if time_gap:
             return
 
-    file_name = await c.ask(chat_id=m.from_user.id, text="Send me the New FileName with extension for this file or send /cancel to stop", filters=filters.text)
+    file_name = await c.ask(chat_id=m.from_user.id, text="**Send me the New FileName with extension for this file \n or send /cancel to stop**", filters=filters.text)
     await file_name.delete()
     await file_name.request.delete()
     new_file_name = file_name.text
@@ -72,7 +72,7 @@ async def media(c, m):
         file_location = await m.download(
                             file_name=download_location,
                             progress=progress_bar,
-                            progress_args=("Uploading to Server:", start_time, send_message)
+                            progress_args=("Uploading to Server", start_time, send_message)
                         )
     except Exception as e:
         logger.error(e)
@@ -130,7 +130,7 @@ async def media(c, m):
                 caption=caption,
                 thumb=thumbnail,
                 progress=progress_bar,
-                progress_args=("Uploading to TG:", start_time, send_message)
+                progress_args=("Uploading to TG", start_time, send_message)
             )
         except FloodWait as e:
             await asyncio.sleep(e.x)
@@ -148,7 +148,7 @@ async def media(c, m):
                 caption=caption,
                 thumb=thumbnail,
                 progress=progress_bar,
-                progress_args=("Uploading to TG:", start_time, send_message)
+                progress_args=("Uploading to TG", start_time, send_message)
             )
         except FloodWait as e:
             await asyncio.sleep(e.x)
