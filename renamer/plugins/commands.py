@@ -95,7 +95,7 @@ async def about(c, m, cb=False):
 
 ################## Mode command ##################
 
-@RenamerNs.on_message(filters.command("mode") & filters.private & filters.incoming)
+@RenamerNs.on_message(filters.command("toggle") & filters.private & filters.incoming)
 async def set_mode(c, m):
     upload_mode = (await get_data(m.from_user.id)).upload_mode
     if upload_mode:
