@@ -1,8 +1,8 @@
 from pyrogram.emoji import *
 
 class TEXT:
-    DOWNLOAD_START = f"Downloading Starts soon {SLEEPING_FACE}"
-    UPLOAD_START = f"Upload Starting Soon {SLEEPING_FACE}"
+    DOWNLOAD_START = f"AnalyZing your File {SLEEPING_FACE}"
+    UPLOAD_START = f"**Renaming File** {SLEEPING_FACE}"
     UPLOAD_SUCESS = f"Thanks for using [me](https://t.me/TgRenameV2Bot)"
     BANNED_USER_TEXT = f"**Sorry D U D E**, you are **BANNED** from using me {FACE_WITH_TEARS_OF_JOY}."
     NOT_LOGGED_TEXT = f"This bot was only for private use {LOCKED_WITH_KEY}. If you want to use this bot you need to send me correct password in the format `/login bot_password`"
